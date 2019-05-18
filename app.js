@@ -14,5 +14,5 @@ todoController(app);
 
 
 //listen to port 
-app.listen(3000);
-console.log('You are listening at port 3000');
+app.listen(8080,'0.0.0.0');
+console.log('You are listening at port 8080');
