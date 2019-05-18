@@ -1,21 +1,22 @@
 {
-  "name": "js-playlist",
+  "name": "to-do-app",
   "version": "1.0.0",
-  "description": "CSS and asset files for the Net Ninja YouTube nodejs playlist",
+  "description": "Simple way to manage todo list",
   "main": "index.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iamshaunjp/node-js-playlist.git"
+    "url": "git+https://github.com/Rish-Singhal/To-Do-application.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/iamshaunjp/node-js-playlist/issues"
+    "url": "https://github.com/Rish-Singhal/To-Do-application/issues"
   },
-  "homepage": "https://github.com/iamshaunjp/node-js-playlist#readme",
+  "homepage": "https://github.com/Rish-Singhal/To-Do-application#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
     "ejs": "^2.6.1",
