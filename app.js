@@ -1,3 +1,5 @@
+'use strict';
+
 var express = require('express');
 var todoController = require('./controllers/todocontroller');
 
@@ -7,12 +9,19 @@ var app = express();
 app.set('view engine','ejs');
 
 //static files
-app.use(express.static('./public'));
+app.use(express.static(__dirname+'/public'));
 
 //fire controller
 todoController(app);
 
 
 //listen to port 
-app.listen(8080,'0.0.0.0');
-console.log('You are listening at port 8080');
+
+const port = process.env.PORT || 8080;
+
+app.set("host", process.env.HOST || "localhost");
+
+app.listen(port, () => {
+  console.log('Express server listening on port', port)
+});
+
